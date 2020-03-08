@@ -4,3 +4,4 @@ vendor/
 node_modules/
 public/
 package-lock.json
+assets/images/.directory/
