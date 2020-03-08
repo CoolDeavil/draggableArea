@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+@import "~bootstrap";
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.ecma6 {
+  content: url("../images/ecma_6.png");
+}
+
+#canvas {
+  width: 800px;
+  height: 600px;
+  background-color: #f5f3c2;
+}
+.appDraggable {
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  background-color: #6fd3fa;
+  border: solid 1px black;
+  touch-action: none;
+  user-select: none;
+  &:not(.isDragging){
+    transition: transform 500ms ease-in-out;
+  }
+  &:hover {
+    cursor: crosshair;
+  }
+  &:active {
+    background-color: #3fb9b6;
+  }
+}
+
+
+.lonely {
+  background-color: orangered;
+
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  z-index: 200;
+  top: 0.5%;
+  left: 37%;
+}
+@import "./title";
